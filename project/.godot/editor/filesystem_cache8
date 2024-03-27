@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711558744
+::res://::1711559102
 1min-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.mp3::AudioStreamMP3::2637906604775614456::1711540741::1711558589::1::::<><>::
 14.png::CompressedTexture2D::6230171142515688320::1711540741::1711558589::1::::<><>::
 105.png::CompressedTexture2D::3153080476874833678::1711540741::1711558589::1::::<><>::
@@ -22,7 +22,6 @@ index.apple-touch-icon.png::CompressedTexture2D::5654026179740216200::1711540741
 index.icon.png::CompressedTexture2D::4567072294709716392::1711540741::1711558589::1::::<><>::
 index.png::CompressedTexture2D::7214703388649612509::1711540741::1711558589::1::::<><>::
 main.gd::GDScript::-1::1711540741::0::1::::<>Node2D<>::
-main.tscn::PackedScene::4712345680348375123::1711558616::0::1::::<><>::res://main.gd<>uid://b32476hejmrnj::::res://player.tscn<>uid://cr7usmfo6apt8::::res://Pixel art/UI objects/GAME_OVER (72 x 8).png<>uid://o6gwbftsnc8c::::res://Pixel art/UI objects/START (48 x 8).png<>uid://b54c7ad6cogrm::::res://ui.tscn<>uid://cx5lxf4u4en76::::res://parallax-space-backgound.png<>res://Camera2D.gd<>uid://bdt263png0com::::res://1min-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.mp3
 Missile_A_Small.png::CompressedTexture2D::8861434907775748364::1711540741::1711558589::1::::<><>::
 mixkit-arcade-game-explosion-2759.wav::AudioStreamWAV::5655736723777628014::1711540741::1711558589::1::::<><>::
 mixkit-game-whip-shot-1512.wav::AudioStreamWAV::1398806430468413532::1711540741::1711558589::1::::<><>::
@@ -51,4 +50,5 @@ GAME_OVER (72 x 8).png::CompressedTexture2D::6033358920190047059::1711540741::17
 Item_held_box (16 x 16).png::CompressedTexture2D::5469959074986072115::1711540741::1711558589::1::::<><>::
 Number_font (8 x 8).png::CompressedTexture2D::6551008884000220467::1711540741::1711558589::1::::<><>::
 START (48 x 8).png::CompressedTexture2D::1047043171866026644::1711540741::1711558589::1::::<><>::
-::res://source/::1711558744
+::res://source/::1711558759
+main.tscn::PackedScene::4712345680348375123::1711558759::0::1::::<><>::res://main.gd<>uid://b54c7ad6cogrm::::res://ui.tscn<>uid://cr7usmfo6apt8::::res://Pixel art/UI objects/GAME_OVER (72 x 8).png<>uid://o6gwbftsnc8c::::res://Pixel art/UI objects/START (48 x 8).png<>uid://b32476hejmrnj::::res://player.tscn<>res://Camera2D.gd<>uid://cx5lxf4u4en76::::res://parallax-space-backgound.png<>uid://bdt263png0com::::res://1min-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.mp3
