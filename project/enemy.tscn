@@ -1,12 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://buv1055nhydxp"]
+[gd_scene load_steps=12 format=3 uid="uid://buv1055nhydxp"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_d3jfa"]
-[ext_resource type="Texture2D" uid="uid://bd1m1f6xdmltw" path="res://Pixel art/Items/Circle_+_Square_+_Missile_pick-ups (16 x 16).png" id="2_hjywq"]
+[ext_resource type="Texture2D" uid="uid://dht6ant0lnn27" path="res://Enemy_1_B_Small.png" id="2_qhb7v"]
 [ext_resource type="Texture2D" uid="uid://dn1edfs6n7tjr" path="res://Pixel art/Effects/Explosion (16 x 16).png" id="3_g73jc"]
 [ext_resource type="Texture2D" uid="uid://bge41mc1db5x7" path="res://Pixel art/unnamed (1).png" id="4_swn38"]
+[ext_resource type="AudioStream" uid="uid://cmtxfmdpgo4h3" path="res://mixkit-arcade-game-explosion-2759.wav" id="5_rbsdc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j7632"]
-size = Vector2(16, 10)
+size = Vector2(35, 30)
 
 [sub_resource type="Animation" id="Animation_suct1"]
 length = 0.001
@@ -136,12 +137,12 @@ animations = [{
 script = ExtResource("1_d3jfa")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.90735e-06, -2.38419e-07)
-scale = Vector2(0.890626, 0.59375)
-texture = ExtResource("2_hjywq")
-hframes = 3
+position = Vector2(5.96046e-08, -1.19209e-07)
+scale = Vector2(0.465, 0.35)
+texture = ExtResource("2_qhb7v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_j7632")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -163,7 +164,11 @@ visible = false
 position = Vector2(95, 73)
 scale = Vector2(1.08854, 1.08125)
 sprite_frames = SubResource("SpriteFrames_1nlm4")
-frame_progress = 0.219921
+frame_progress = 0.347827
+
+[node name="boom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_rbsdc")
+volume_db = 2.476
 
 [connection signal="timeout" from="MoveTimer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

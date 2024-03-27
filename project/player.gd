@@ -7,6 +7,9 @@ signal died
 @export var cooldown = 0.25
 @export var bullet_scene : PackedScene
 @export var max_shield = 10
+@onready var animations = $AnimationPlayer
+
+
 var shield = max_shield:
 	set = set_shield
 	
@@ -23,24 +26,20 @@ func start():
 	shield = max_shield
 	$GunCooldown.wait_time = cooldown
 	
+	
+
+	
 func _process(delta):
 	var input = Input.get_vector("left", "right", "up", "down")
-	if input.x > 0:
-		$Hero.frame = 2
-
-	elif input.x < 0:
-		$Hero.frame = 0
-
-	else:
-		$Hero.frame = 1
-
 	position += input * speed * delta * 1.5
 	position = position.clamp(Vector2(8, 8), screensize-Vector2(8, 8))
 
 	if Input.is_action_pressed("shoot"):
 		shoot()
 
+	
 func shoot():
+	$Shoot.play(0.09)
 	if not can_shoot:
 		return
 	can_shoot = false

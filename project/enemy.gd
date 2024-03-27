@@ -34,6 +34,7 @@ func _process(delta):
 		start(start_pos)
 
 func explode():
+	$boom.play(0.0)
 	speed = 0
 	$AnimationPlayer.play("explode")
 	set_deferred("monitorable", false)
