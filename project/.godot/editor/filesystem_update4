@@ -1,7 +1,1 @@
-res://source/main.tscn
-res://bullet.tscn
-res://enemy.tscn
-res://enemy_bullet.tscn
-res://player.tscn
-res://score_counter.tscn
-res://ui.tscn
+res://main.tscn
